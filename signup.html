@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="D:\Udemy Full-Stack web develpoer\Atom\ResponsiveBlog\photo\logo.png">
+    <script>
+function val()
+{
+var a= document.getElementById("t1").value;
+var p= document.getElementById("p1").value;
+var m= document.getElementById("t2").value;
+var pi= document.getElementById("t3").value;
+if(a=="" || p=="" || m=="" || pi=="" )
+{
+alert("Fill all of them");
+}
+if(isNaN(m) || m.length!=10)
+{
+alert("Please enter a valid mobile number");
+}
+}
+</script>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Signup</h1>
+        <form method="post">
+          <div class="txt_field">
+              <input type="int" id="t2">
+              <label>Phone Number</label>
+          </div>
+<div class="txt_field">
+    <input type="" id="p1" >
+    <label>Gmail</label>
+</div>
+<div class="txt_field">
+    <input  input type="int" id="t1">
+    <label>User ID</label>
+</div>
+<div class="txt_field">
+    <input type="text" id="t3" >
+    <label>Full Name</label>
+</div>
+<div class="pass">Forgot password?</div>
+<input type="submit" value="Login" onclick="val()">
+<div  align="center"><a href="index.html">Go back</a></div>
+<div class="signup_link">
+    New User <a href="index.html">Signup</a>
+</div>
+        </form>
+    </div>
+</body>
+</html>

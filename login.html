@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="D:\Udemy Full-Stack web develpoer\Atom\ResponsiveBlog\photo\logo.png">
+    <script>
+function val()
+{
+var a= document.getElementById("t1").value;
+var p= document.getElementById("p1").value;
+if(a=="" && p=="")
+{
+alert("Either Number or password is empty. Fill the field");
+}
+if(isNaN(a) || a.length!=10)
+{
+alert("Please enter a valid mobile number");
+}
+}
+</script>
+</head>
+<body>
+    <div class="center">
+        <h1>Login Page</h1>
+        <form method="post">
+<div class="txt_field">
+    <input type="number" id="t1" >
+    <label> Mobile Number </label>
+</div>
+<div class="txt_field">
+    <input type="password" id="p1">
+    <label>Password</label>
+</div>
+<div class="pass">Forgot password?</div>
+<input type="submit" value="Login" onclick="val()"><p></p>
+<div  align="center"><a href="index.html">Go back</a></div>
+<div class="signup_link">
+    New User <a href="signup.html">Signup</a>
+</div>
+        </form>
+    </div>
+</body>
+</html>
